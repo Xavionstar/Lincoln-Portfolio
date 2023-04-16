@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Skills from "./skills";
 import Foodle from "./foodle";
 import TakeAHike from "./takeahike";
+import Contact from "./contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/foodle" element={<Foodle />} />
           <Route path="/takeahike" element={<TakeAHike />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Container>
 

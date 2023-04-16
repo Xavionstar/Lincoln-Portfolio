@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
+
 const Header = () => {
   return(
     <header>
@@ -14,6 +15,7 @@ const Header = () => {
         <Nav className="me-auto">
           <Nav.Link href="/homepage">Home</Nav.Link>
           <Nav.Link href="/skills">Resume</Nav.Link>
+          <Nav.Link href="/contact">Contact Me</Nav.Link>
           <NavDropdown title="Projects" id="basic-nav-dropdown">
             <NavDropdown.Item href="/foodle">Foodle</NavDropdown.Item>
             <NavDropdown.Item href="/takeahike">
