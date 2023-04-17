@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import foodlePic from "./assets/foodlePic.png";
 
-
+//this is the foodle component. It will render the foodle card on the foodle page with links to the deployed app and the repo
 function Foodle() {
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">

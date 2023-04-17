@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import takeAHikePic from "./assets/takeahikepic.png";
 
-
+//this is the take a hike component. It will render the take a hike card on the take a hike page with links to the deployed app and the repo
 function Takeahike() {
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">

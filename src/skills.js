@@ -2,6 +2,8 @@ import { Container } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
 import ProgressBar from "react-bootstrap/ProgressBar";
 function Skills() {
+  //this function will render the skills page and also contain the progress bars styling for the skills
+  //this also contains the resume download button to download my resume from the public folder
   return (
     <>
       <Container>

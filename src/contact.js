@@ -1,14 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import React, { useState } from 'react';
-
-
 import Col from 'react-bootstrap/Col';
-
-import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 function Contact() {
-  
+  //this is the bootstrap react state hook that will be used to validate the form
     const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -22,8 +18,10 @@ function Contact() {
   };
 
   return (
-    <>
-  
+    // this is the bootstrap react container that will be used to center the form
+    // the vh-100 class will make the container take up the full height of the viewport
+    // form.control.feedback is what will be displayed if the form is not valid since they are all declared as required
+    <>  
     <div className="d-flex flex-column justify-content-center align-items-center  vh-100">
  <h1 className="text-center pt-5">Contact Me!</h1>
     <Form style={{width: "500px"}} noValidate validated={validated} onSubmit={handleSubmit}>
@@ -35,6 +33,7 @@ function Contact() {
             type="text"
             placeholder="Enter Your Name"            
           />
+          
         <Form.Control.Feedback type="invalid">
               This field is mandatory.
             </Form.Control.Feedback>

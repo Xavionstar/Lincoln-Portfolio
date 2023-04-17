@@ -2,9 +2,35 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 
-
+//this is the header component that will be rendered on every page
+// it will contain the navbar and the page label button
+// the navbar is static but the page label button will change based on the current page by updating the state
 const Header = () => {
+  
+  let currentPage = window.location.pathname;
+  const [state, setState] = useState(getPageLabel()); 
+
+  function getPageLabel() {
+    if (currentPage === '/homepage') {
+      return'About Me';   
+    } else if (currentPage === '/skills') {
+      return'Resume';
+    } else if (currentPage === '/contact') {
+      return'Contact'; 
+    } else if (currentPage === '/foodle') {
+      return'Foodle';
+    } else if (currentPage === '/takeahike') {
+      return'Take A Hike';
+    } else {
+      return'About Me';
+    }
+  }
+
+
+  
   return(
     <header>
   <Navbar bg="primary-subtle border border-dark border-3" expand="lg">
@@ -13,19 +39,15 @@ const Header = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="/homepage">Home</Nav.Link>
+        <p class="fs-3" >You are on the <Button variant="success">{state} </Button>{' '} page!</p>
+          <Nav.Link href="/homepage" >About Me!</Nav.Link>
           <Nav.Link href="/skills">Resume</Nav.Link>
           <Nav.Link href="/contact">Contact Me</Nav.Link>
           <NavDropdown title="Projects" id="basic-nav-dropdown">
             <NavDropdown.Item href="/foodle">Foodle</NavDropdown.Item>
             <NavDropdown.Item href="/takeahike">
               Take A Hike
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              Separated link
-            </NavDropdown.Item>
+            </NavDropdown.Item>                      
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

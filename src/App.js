@@ -10,6 +10,10 @@ import TakeAHike from "./takeahike";
 import Contact from "./contact";
 
 function App() {
+  //The app function will render the header, footer, and the routes for the different pages.
+  //the routes will render the different pages based on the url path
+  //header and footer will be rendered on every page because they are outside of the routes and therefore static
+
   return (
     <div  className="d-flex flex-column min-vh-100 ">
       <Container className="flex-grow-1 bg-success-subtle px-0">
