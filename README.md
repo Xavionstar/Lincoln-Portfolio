@@ -8,7 +8,7 @@ his portfolio will demonstrate all the skills that I have acquired in the coding
 https://github.com/Xavionstar/Lincoln-Portfolio
 
 ## Screenshot
-![picture of web page](https://github.com/Xavionstar/Lincoln-Portfolio/blob/src/assets/portfolio-screenshot.PNG?raw=true)
+![picture of web page](https://github.com/Xavionstar/Lincoln-Portfolio/blob/main/src/assets/portfolio-screenshot.PNG?raw=true)
 
 ## About the Author
-Lincoln Winter Pough, fullstack web 
+Lincoln Winter Pough, fullstack web developer

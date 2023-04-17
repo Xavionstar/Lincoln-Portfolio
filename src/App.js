@@ -8,6 +8,10 @@ import Skills from "./skills";
 import Foodle from "./foodle";
 import TakeAHike from "./takeahike";
 import Contact from "./contact";
+import Weatherapp from "./weatherapp";
+import Technicallyspeaking from "./technicallyspeaking";
+import Dailygrind from "./dailygrind";
+import Mytwocents from "./MyTwoCents";
 
 function App() {
   //The app function will render the header, footer, and the routes for the different pages.
@@ -24,6 +28,10 @@ function App() {
           <Route path="/foodle" element={<Foodle />} />
           <Route path="/takeahike" element={<TakeAHike />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/weatherapp" element={<Weatherapp />} />
+          <Route path="/technically" element={<Technicallyspeaking />} />
+          <Route path="/dailygrind" element={<Dailygrind />} />
+          <Route path="/mytwocents" element={<Mytwocents />} />
         </Routes>
       </Container>
 
