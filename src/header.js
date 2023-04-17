@@ -14,7 +14,7 @@ const Header = () => {
   const [state, setState] = useState(getPageLabel()); 
 
   function getPageLabel() {
-    if (currentPage === '/Lincoln-Portfolio/homepage') {
+    if (currentPage === '/Lincoln-Portfolio/') {
       return'About Me';   
     } else if (currentPage === '/Lincoln-Portfolio/skills') {
       return'Resume';
@@ -48,7 +48,7 @@ const Header = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
         <p class="fs-3" >You are on the <Button variant="success">{state} </Button>{' '} page!</p>
-          <Nav.Link href="/Lincoln-Portfolio/homepage" >About Me!</Nav.Link>
+          <Nav.Link href="/Lincoln-Portfolio/" >About Me!</Nav.Link>
           <Nav.Link href="/Lincoln-Portfolio/skills">Resume</Nav.Link>
           <Nav.Link href="/Lincoln-Portfolio/contact">Contact Me</Nav.Link>
           <NavDropdown title="Projects" id="basic-nav-dropdown">

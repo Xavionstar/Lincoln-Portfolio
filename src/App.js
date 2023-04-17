@@ -23,7 +23,7 @@ function App() {
       <Container className="flex-grow-1 bg-success-subtle px-0">
         <Header />
         <Routes>
-          <Route path="/Lincoln-Portfolio/homepage" element={<Homepage />} />
+          <Route path="/Lincoln-Portfolio/" element={<Homepage />} />
           <Route path="/Lincoln-Portfolio/skills" element={<Skills />} />
           <Route path="/Lincoln-Portfolio/foodle" element={<Foodle />} />
           <Route path="/Lincoln-Portfolio/takeahike" element={<TakeAHike />} />
