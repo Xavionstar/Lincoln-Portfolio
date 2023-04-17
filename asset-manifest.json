@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Libcoln-Portfolio/static/css/main.1c9eb639.css",
-    "main.js": "/Libcoln-Portfolio/static/js/main.708717ca.js",
-    "static/js/787.c4403c7b.chunk.js": "/Libcoln-Portfolio/static/js/787.c4403c7b.chunk.js",
-    "static/media/takeahikepic.png": "/Libcoln-Portfolio/static/media/takeahikepic.9463b7f5e701bb34afcd.png",
-    "static/media/selfie.jpg": "/Libcoln-Portfolio/static/media/selfie.cfe35d3c3aa336b8bb67.jpg",
-    "static/media/mytwocents.png": "/Libcoln-Portfolio/static/media/mytwocents.1c47fefaa8d42d7aadc7.png",
-    "static/media/weatherAppPic.png": "/Libcoln-Portfolio/static/media/weatherAppPic.8a8d48d2375be02deb57.png",
-    "static/media/techscreenshot.png": "/Libcoln-Portfolio/static/media/techscreenshot.4a647479d396918333fe.png",
-    "static/media/foodlePic.png": "/Libcoln-Portfolio/static/media/foodlePic.045735285425f79900d8.png",
-    "static/media/daily-grind.png": "/Libcoln-Portfolio/static/media/daily-grind.9bddc932d7aa527de90d.png",
-    "index.html": "/Libcoln-Portfolio/index.html",
-    "main.1c9eb639.css.map": "/Libcoln-Portfolio/static/css/main.1c9eb639.css.map",
-    "main.708717ca.js.map": "/Libcoln-Portfolio/static/js/main.708717ca.js.map",
-    "787.c4403c7b.chunk.js.map": "/Libcoln-Portfolio/static/js/787.c4403c7b.chunk.js.map"
+    "main.css": "/Lincoln-Portfolio/static/css/main.1c9eb639.css",
+    "main.js": "/Lincoln-Portfolio/static/js/main.94517e88.js",
+    "static/js/787.c4403c7b.chunk.js": "/Lincoln-Portfolio/static/js/787.c4403c7b.chunk.js",
+    "static/media/takeahikepic.png": "/Lincoln-Portfolio/static/media/takeahikepic.9463b7f5e701bb34afcd.png",
+    "static/media/selfie.jpg": "/Lincoln-Portfolio/static/media/selfie.cfe35d3c3aa336b8bb67.jpg",
+    "static/media/mytwocents.png": "/Lincoln-Portfolio/static/media/mytwocents.1c47fefaa8d42d7aadc7.png",
+    "static/media/weatherAppPic.png": "/Lincoln-Portfolio/static/media/weatherAppPic.8a8d48d2375be02deb57.png",
+    "static/media/techscreenshot.png": "/Lincoln-Portfolio/static/media/techscreenshot.4a647479d396918333fe.png",
+    "static/media/foodlePic.png": "/Lincoln-Portfolio/static/media/foodlePic.045735285425f79900d8.png",
+    "static/media/daily-grind.png": "/Lincoln-Portfolio/static/media/daily-grind.9bddc932d7aa527de90d.png",
+    "index.html": "/Lincoln-Portfolio/index.html",
+    "main.1c9eb639.css.map": "/Lincoln-Portfolio/static/css/main.1c9eb639.css.map",
+    "main.94517e88.js.map": "/Lincoln-Portfolio/static/js/main.94517e88.js.map",
+    "787.c4403c7b.chunk.js.map": "/Lincoln-Portfolio/static/js/787.c4403c7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c9eb639.css",
-    "static/js/main.708717ca.js"
+    "static/js/main.94517e88.js"
   ]
 }
