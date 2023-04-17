@@ -23,15 +23,15 @@ function App() {
       <Container className="flex-grow-1 bg-success-subtle px-0">
         <Header />
         <Routes>
-          <Route path="/homepage" element={<Homepage />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/foodle" element={<Foodle />} />
-          <Route path="/takeahike" element={<TakeAHike />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/weatherapp" element={<Weatherapp />} />
-          <Route path="/technically" element={<Technicallyspeaking />} />
-          <Route path="/dailygrind" element={<Dailygrind />} />
-          <Route path="/mytwocents" element={<Mytwocents />} />
+          <Route path="/Lincoln-Portfolio/homepage" element={<Homepage />} />
+          <Route path="/Lincoln-Portfolio/skills" element={<Skills />} />
+          <Route path="/Lincoln-Portfolio/foodle" element={<Foodle />} />
+          <Route path="/Lincoln-Portfolio/takeahike" element={<TakeAHike />} />
+          <Route path="/Lincoln-Portfolio/contact" element={<Contact />} />
+          <Route path="/Lincoln-Portfolio/weatherapp" element={<Weatherapp />} />
+          <Route path="/Lincoln-Portfolio/technically" element={<Technicallyspeaking />} />
+          <Route path="/Lincoln-Portfolio/dailygrind" element={<Dailygrind />} />
+          <Route path="/Lincoln-Portfolio/mytwocents" element={<Mytwocents />} />
         </Routes>
       </Container>
 

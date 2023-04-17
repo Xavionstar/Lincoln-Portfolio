@@ -14,23 +14,23 @@ const Header = () => {
   const [state, setState] = useState(getPageLabel()); 
 
   function getPageLabel() {
-    if (currentPage === '/homepage') {
+    if (currentPage === '/Lincoln-Portfolio/homepage') {
       return'About Me';   
-    } else if (currentPage === '/skills') {
+    } else if (currentPage === '/Lincoln-Portfolio/skills') {
       return'Resume';
-    } else if (currentPage === '/contact') {
+    } else if (currentPage === '/Lincoln-Portfolio/contact') {
       return'Contact'; 
-    } else if (currentPage === '/foodle') {
+    } else if (currentPage === '/Lincoln-Portfolio/foodle') {
       return'Foodle';
-    } else if (currentPage === '/takeahike') {
+    } else if (currentPage === '/Lincoln-Portfolio/takeahike') {
       return'Take A Hike';
-    } else if (currentPage === '/weatherapp') {
+    } else if (currentPage === '/Lincoln-Portfolio/weatherapp') {
       return'Weather You\'re Ready or Not';
-    } else if (currentPage === '/technically') {
+    } else if (currentPage === '/Lincoln-Portfolio/technically') {
       return'Technically Speaking';
-    } else if (currentPage === '/dailygrind') {
+    } else if (currentPage === '/Lincoln-Portfolio/dailygrind') {
       return'Daily Grind';
-    } else if (currentPage === '/mytwocents') {
+    } else if (currentPage === '/Lincoln-Portfolio/mytwocents') {
       return'My Two Cents';
     } else {
       return'About Me';
@@ -48,16 +48,16 @@ const Header = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
         <p class="fs-3" >You are on the <Button variant="success">{state} </Button>{' '} page!</p>
-          <Nav.Link href="/homepage" >About Me!</Nav.Link>
-          <Nav.Link href="/skills">Resume</Nav.Link>
-          <Nav.Link href="/contact">Contact Me</Nav.Link>
+          <Nav.Link href="/Lincoln-Portfolio/homepage" >About Me!</Nav.Link>
+          <Nav.Link href="/Lincoln-Portfolio/skills">Resume</Nav.Link>
+          <Nav.Link href="/Lincoln-Portfolio/contact">Contact Me</Nav.Link>
           <NavDropdown title="Projects" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/foodle">Foodle</NavDropdown.Item>
-            <NavDropdown.Item href="/takeahike">Take A Hike</NavDropdown.Item>  
-            <NavDropdown.Item href="/weatherapp">Weather You're Ready or Not</NavDropdown.Item> 
-            <NavDropdown.Item href="/technically">Technically Speaking</NavDropdown.Item>  
-            <NavDropdown.Item href="/dailygrind">Daily Grind</NavDropdown.Item>  
-            <NavDropdown.Item href="/mytwocents">My Two Cents</NavDropdown.Item>                 
+            <NavDropdown.Item href="/Lincoln-Portfolio/foodle">Foodle</NavDropdown.Item>
+            <NavDropdown.Item href="/Lincoln-Portfolio/takeahike">Take A Hike</NavDropdown.Item>  
+            <NavDropdown.Item href="/Lincoln-Portfolio/weatherapp">Weather You're Ready or Not</NavDropdown.Item> 
+            <NavDropdown.Item href="/Lincoln-Portfolio/technically">Technically Speaking</NavDropdown.Item>  
+            <NavDropdown.Item href="/Lincoln-Portfolio/dailygrind">Daily Grind</NavDropdown.Item>  
+            <NavDropdown.Item href="/Lincoln-Portfolio/mytwocents">My Two Cents</NavDropdown.Item>                 
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
