@@ -23,15 +23,15 @@ function App() {
       <Container className="flex-grow-1 bg-success-subtle px-0">
         <Header />
         <Routes>
-          <Route path="https://xavionstar.github.io/Lincoln-Portfolio/" element={<Homepage />} />
-          <Route path="https://xavionstar.github.io/Lincoln-Portfolio/skills" element={<Skills />} />
-          <Route path="https://xavionstar.github.io/Lincoln-Portfolio/foodle" element={<Foodle />} />
-          <Route path="https://xavionstar.github.io/Lincoln-Portfolio/takeahike" element={<TakeAHike />} />
-          <Route path="https://xavionstar.github.io/Lincoln-Portfolio/contact" element={<Contact />} />
-          <Route path="https://xavionstar.github.io/Lincoln-Portfolio/weatherapp" element={<Weatherapp />} />
-          <Route path="https://xavionstar.github.io/Lincoln-Portfolio/technically" element={<Technicallyspeaking />} />
-          <Route path="https://xavionstar.github.io/Lincoln-Portfolio/dailygrind" element={<Dailygrind />} />
-          <Route path="https://xavionstar.github.io/Lincoln-Portfolio/mytwocents" element={<Mytwocents />} />
+          <Route path="/homepage" element={<Homepage />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/foodle" element={<Foodle />} />
+          <Route path="/takeahike" element={<TakeAHike />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/weatherapp" element={<Weatherapp />} />
+          <Route path="/technically" element={<Technicallyspeaking />} />
+          <Route path="/dailygrind" element={<Dailygrind />} />
+          <Route path="/mytwocents" element={<Mytwocents />} />
         </Routes>
       </Container>
 
