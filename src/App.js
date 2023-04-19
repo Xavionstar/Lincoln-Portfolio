@@ -23,7 +23,7 @@ function App() {
       <Container className="flex-grow-1 bg-success-subtle px-0">
         <Header />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route exact path="/" element={<Homepage />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/foodle" element={<Foodle />} />
           <Route path="/takeahike" element={<TakeAHike />} />
