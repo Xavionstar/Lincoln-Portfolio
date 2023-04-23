@@ -6,13 +6,13 @@ function Skills() {
   //this also contains the resume download button to download my resume from the public folder
   return (
     <>
-      <Container>
+      <Container >
         <h1 className="text-center pt-5">Skills that I Have Acquired</h1>
-        <p className="text-center">Download My <a className="btn btn-primary" href="/Lincoln-Portfolio/Resume.pdf" role="button">Resume</a></p>
+        <p style={{fontWeight:"bold"}} className="text-center">Download My <a className="btn btn-primary" href="/Lincoln-Portfolio/Resume.pdf" role="button">Resume</a></p>
       </Container>
       <div className="d-flex justify-content-center align-items-center vh-100">
         <ListGroup>
-          <p className="fs-3">Front End Proficiencies</p>
+          <p style={{fontWeight:"bold"}} className="fs-3">Front End Proficiencies</p>
           <ListGroup.Item variant="info">
             HTML
             <div>
@@ -50,7 +50,7 @@ function Skills() {
             </div>
           </ListGroup.Item>
           
-          <p className="fs-3">Back End Proficiencies</p>
+          <p style={{fontWeight:"bold"}} className="fs-3">Back End Proficiencies</p>
           <ListGroup.Item variant="info">
             MongoDB
             <div>

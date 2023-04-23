@@ -27,7 +27,7 @@ function Contact() {
     <Form style={{width: "500px"}} noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3">
         <Form.Group as={Col} md="12" controlId="validationCustom01">
-          <Form.Label>Name</Form.Label>
+          <Form.Label style={{fontWeight:"bold"}}>Name</Form.Label>
           <Form.Control
             required
             type="text"
@@ -42,7 +42,7 @@ function Contact() {
         
         <Row className="mb-3">
         <Form.Group as={Col} md="12" controlId="validationCustom02">
-          <Form.Label>Email</Form.Label>
+          <Form.Label style={{fontWeight:"bold"}}>Email</Form.Label>
           <Form.Control
             required
             type="email"
@@ -59,7 +59,7 @@ function Contact() {
 
         <Row className="mb-3">
         <Form.Group className="mb-24" controlId="Message.ControlTextarea1">
-        <Form.Label >Message</Form.Label>        
+        <Form.Label style={{fontWeight:"bold"}} >Message</Form.Label>        
         <Form.Control              
             required
             type="text"
@@ -72,7 +72,7 @@ function Contact() {
       </Form.Group>
      
         </Row>
-      <Button pt="4" type="submit">Submit form</Button>
+      <Button pt="4" type="submit">Submit</Button>
     </Form>
     </div>
     </>

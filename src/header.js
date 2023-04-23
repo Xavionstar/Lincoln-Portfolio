@@ -13,38 +13,20 @@ const Header = () => {
   function handleClick(e) {
     let currentPath = e.target.hash;
     setActiveLink(currentPath);
-    // if (currentPath === "#/"){
-    //   setActiveLink("/");
-    // } else if (currentPath === "#/skills"){
-    //   setActiveLink("/skills");
-    // } else if (currentPath === "#/contact"){
-    //   setActiveLink("/contact");
-    // } else if (currentPath === "#/foodle"){
-    //   setActiveLink("/foodle");
-    // } else if (currentPath === "#/takeahike"){
-    //   setActiveLink("/takeahike");
-    // } else if (currentPath === "#/weatherapp"){
-    //   setActiveLink("/weatherapp");
-    // } else if (currentPath === "#/technically"){
-    //   setActiveLink("/technically");
-    // } else if (currentPath === "#/dailygrind"){
-    //   setActiveLink("/dailygrind");
-    // } else if (currentPath === "#/mytwocents"){
-    //   setActiveLink("/mytwocents");
-    // }
+    
   }
 
   return (
     <header>
       <Navbar bg="primary-subtle border border-dark border-3" expand="lg">
         <Container>
-          <Navbar.Brand>Lincoln's Portfolio</Navbar.Brand>
+          <Navbar.Brand href="#/" >Lincoln's Portfolio</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto" onClick={handleClick}>
               <Link
-                className={"nav-link" + (activeLink === "#/" ? " active" : "")}
-                to="/"
+                className={"nav-link" + (activeLink === "#/aboutme" ? " active" : "")}
+                to="/aboutme"
               >
                 About Me!
               </Link>
