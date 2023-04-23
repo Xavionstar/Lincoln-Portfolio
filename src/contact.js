@@ -60,7 +60,7 @@ function Contact() {
         <Row className="mb-3">
         <Form.Group className="mb-24" controlId="Message.ControlTextarea1">
         <Form.Label >Message</Form.Label>        
-        <Form.Control column sm={10} 
+        <Form.Control              
             required
             type="text"
             placeholder="Enter message here."

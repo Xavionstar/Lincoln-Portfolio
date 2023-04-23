@@ -8,11 +8,11 @@ function Skills() {
     <>
       <Container>
         <h1 className="text-center pt-5">Skills that I Have Acquired</h1>
-        <p className="text-center">Download My <a class="btn btn-primary" href="/Resume.pdf" role="button">Resume</a></p>
+        <p className="text-center">Download My <a className="btn btn-primary" href="/Lincoln-Portfolio/Resume.pdf" role="button">Resume</a></p>
       </Container>
       <div className="d-flex justify-content-center align-items-center vh-100">
         <ListGroup>
-          <p class="fs-3">Front End Proficiencies</p>
+          <p className="fs-3">Front End Proficiencies</p>
           <ListGroup.Item variant="info">
             HTML
             <div>
@@ -50,7 +50,7 @@ function Skills() {
             </div>
           </ListGroup.Item>
           
-          <p class="fs-3">Back End Proficiencies</p>
+          <p className="fs-3">Back End Proficiencies</p>
           <ListGroup.Item variant="info">
             MongoDB
             <div>

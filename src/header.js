@@ -1,69 +1,131 @@
 import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from "react";
 
 //this is the header component that will be rendered on every page
 // it will contain the navbar and the page label button
 // the navbar is static but the page label button will change based on the current page by updating the state
 const Header = () => {
-  
-  let currentPage = window.location.pathname;
-  const [state, setState] = useState(getPageLabel()); 
-
-  function getPageLabel() {
-    if (currentPage === '/') {
-      return'About Me';   
-    } else if (currentPage === '/skills') {
-      return'Resume';
-    } else if (currentPage === '/contact') {
-      return'Contact'; 
-    } else if (currentPage === '/foodle') {
-      return'Foodle';
-    } else if (currentPage === '/takeahike') {
-      return'Take A Hike';
-    } else if (currentPage === '/weatherapp') {
-      return'Weather You\'re Ready or Not';
-    } else if (currentPage === '/technically') {
-      return'Technically Speaking';
-    } else if (currentPage === '/dailygrind') {
-      return'Daily Grind';
-    } else if (currentPage === '/mytwocents') {
-      return'My Two Cents';
-    } else {
-      return'About Me';
-    }
+  const [activeLink, setActiveLink] = useState("");
+  function handleClick(e) {
+    let currentPath = e.target.hash;
+    setActiveLink(currentPath);
+    // if (currentPath === "#/"){
+    //   setActiveLink("/");
+    // } else if (currentPath === "#/skills"){
+    //   setActiveLink("/skills");
+    // } else if (currentPath === "#/contact"){
+    //   setActiveLink("/contact");
+    // } else if (currentPath === "#/foodle"){
+    //   setActiveLink("/foodle");
+    // } else if (currentPath === "#/takeahike"){
+    //   setActiveLink("/takeahike");
+    // } else if (currentPath === "#/weatherapp"){
+    //   setActiveLink("/weatherapp");
+    // } else if (currentPath === "#/technically"){
+    //   setActiveLink("/technically");
+    // } else if (currentPath === "#/dailygrind"){
+    //   setActiveLink("/dailygrind");
+    // } else if (currentPath === "#/mytwocents"){
+    //   setActiveLink("/mytwocents");
+    // }
   }
 
-
-  
-  return(
+  return (
     <header>
-  <Navbar bg="primary-subtle border border-dark border-3" expand="lg">
-    <Container>
-      <Navbar.Brand >Lincoln's Portfolio</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-        <p class="fs-3" >You are on the <Button variant="success">{state} </Button>{' '} page!</p>
-          <Nav.Link href="/" >About Me!</Nav.Link>
-          <Nav.Link href="/skills">Resume</Nav.Link>
-          <Nav.Link href="/contact">Contact Me</Nav.Link>
-          <NavDropdown title="Projects" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/foodle">Foodle</NavDropdown.Item>
-            <NavDropdown.Item href="/takeahike">Take A Hike</NavDropdown.Item>  
-            <NavDropdown.Item href="/weatherapp">Weather You're Ready or Not</NavDropdown.Item> 
-            <NavDropdown.Item href="/technically">Technically Speaking</NavDropdown.Item>  
-            <NavDropdown.Item href="/dailygrind">Daily Grind</NavDropdown.Item>  
-            <NavDropdown.Item href="/mytwocents">My Two Cents</NavDropdown.Item>                 
-          </NavDropdown>
-        </Nav>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
-  </header>)
+      <Navbar bg="primary-subtle border border-dark border-3" expand="lg">
+        <Container>
+          <Navbar.Brand>Lincoln's Portfolio</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto" onClick={handleClick}>
+              <Link
+                className={"nav-link" + (activeLink === "#/" ? " active" : "")}
+                to="/"
+              >
+                About Me!
+              </Link>
+              <Link
+                className={
+                  "nav-link" + (activeLink === "#/skills" ? " active" : "")
+                }
+                to="/skills"
+              >
+                Resume
+              </Link>
+              <Link
+                className={
+                  "nav-link" + (activeLink === "#/contact" ? " active" : "")
+                }
+                to="/contact"
+              >
+                Contact Me
+              </Link>
+              <NavDropdown title="Projects" id="basic-nav-dropdown">
+                <Link
+                  className={
+                    "dropdown-item" +
+                    (activeLink === "#/foodle" ? " active" : "")
+                  }
+                  to="/foodle"
+                >
+                  Foodle
+                </Link>
+                <Link
+                  className={
+                    "dropdown-item" +
+                    (activeLink === "#/takeahike" ? " active" : "")
+                  }
+                  to="/takeahike"
+                >
+                  Take A Hike
+                </Link>
+                <Link
+                  className={
+                    "dropdown-item" +
+                    (activeLink === "#/weatherapp" ? " active" : "")
+                  }
+                  to="/weatherapp"
+                >
+                  Weather You're Ready or Not
+                </Link>
+                <Link
+                  className={
+                    "dropdown-item" +
+                    (activeLink === "#/technically" ? " active" : "")
+                  }
+                  to="/technically"
+                >
+                  Technically Speaking
+                </Link>
+                <Link
+                  className={
+                    "dropdown-item" +
+                    (activeLink === "#/dailygrind" ? " active" : "")
+                  }
+                  to="/dailygrind"
+                >
+                  Daily Grind
+                </Link>
+                <Link
+                  className={
+                    "dropdown-item" +
+                    (activeLink === "#/mytwocents" ? " active" : "")
+                  }
+                  to="/mytwocents"
+                >
+                  My Two Cents
+                </Link>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
+  );
 };
 
 export default Header;
