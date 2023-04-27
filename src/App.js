@@ -28,7 +28,7 @@ function App() {
   };
 
   function getHomePage(currentPath) {
-    if (currentPath === "#/") {
+    if (currentPath === "#/" || currentPath === "") {
       console.log("returned true");
       return true;
     } else {
