@@ -1,19 +1,29 @@
 import homeBg from "./assets/homepage_bgImage.jpg";
 
 
-// this is the about me component. It will render the about me card with my profile picture and a short bio
+
 function Homepage() {
   return (
     <div style={{
-      width: "100vw",
-      height: "100vh",
+      width: "100%",
+      height: "100%",
       
       backgroundSize: "cover",
       backgroundPosition: "center",
-      backgroundImage: `url(${homeBg})`,
-    }} className="d-flex flex-column min-vh-100">
-    
+    }} >    
+
+<p style={{
+      color: "black",
+      fontSize: "70px",
+      fontWeight: "bold",
+      textAlign: "center",
+      paddingTop: "300px",
+      paddingBottom: "100px",
+      textShadow: "2px 2px 5px white"
+    }} >DIVE INTO MY PORTFOLIO!</p>
     </div>
+
+    
   );
 }
 

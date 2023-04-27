@@ -8,19 +8,20 @@ import React, { useState } from "react";
 //this is the header component that will be rendered on every page
 // it will contain the navbar and the page label button
 // the navbar is static but the page label button will change based on the current page by updating the state
-const Header = () => {
+const Header = ({setBackgroudImage}) => {
   const [activeLink, setActiveLink] = useState("");
   function handleClick(e) {
     let currentPath = e.target.hash;
+
     setActiveLink(currentPath);
-    
+    setBackgroudImage(currentPath);
   }
 
   return (
     <header>
       <Navbar bg="primary-subtle border border-dark border-3" expand="lg">
         <Container>
-          <Navbar.Brand href="#/" >Lincoln's Portfolio</Navbar.Brand>
+          <Navbar.Brand onClick={handleClick} href="#/" >Lincoln's Portfolio</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto" onClick={handleClick}>
